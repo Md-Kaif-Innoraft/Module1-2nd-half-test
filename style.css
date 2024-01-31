@@ -41,10 +41,20 @@
 
 }
 
+/*  container for alignment */
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* Primary heading */
 .primary-heading {
     font-family: "NoticiaText-Bold";
     font-size: 3rem;
 }
+
+/* Secondary Heading */
 
 .secondary-heading {
     font-family: "WorkSans-SemiBold";
@@ -52,33 +62,31 @@
 
 }
 
+/* Paragraph text style */
+
 .para-text {
     font-family: "WorkSans-Regular";
 }
 
+/* Flex class for display flex */
+
 .flex {
     display: flex;
-    /* justify-content: space-between; */
     gap: 30px;
 }
 
-/*  container for alignment */
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
-}
 
-/* upper section starts here  */
+/* Top section starts here  */
 
-#upper {
+#top-section {
     background-color: var(--Green);
-    padding: 60px 0;
+    padding-top: 100px;
     color: var(--Cream);
 
 }
 
-
-.card {
+.top-container,
+.bottom-container {
     padding: 70px;
     background: var(--Dark-green);
     border-radius: 25px;
@@ -86,19 +94,19 @@
 }
 
 
-.upper-left {
+.top-left {
     width: 45%;
 }
 
 
 .primary-btn {
-    padding: 15px 35px;
+    padding: 15px 40px;
     border: 1px solid var(--Cream);
-    border-radius: 10px;
-    font-family: "WorkSans-Regular";
+    border-radius: 5px;
+    font-family: "WorkSans-Medium";
     background: transparent;
     color: var(--Cream);
-    margin-top: 40px;
+    margin-top: 50px;
 
 }
 
@@ -106,38 +114,36 @@
     padding: 20px 0;
 }
 
-/* upper section Ends here  */
+/* Top section Ends here  */
 
-/* Down container */
 
-#down {
+/* bottom section starts here */
+
+#bottom-section {
     background: var(--Green);
-    padding-bottom: 60px;
+    padding: 60px 0 100px 0;
 }
 
 
-.down-left {
+.bottom-left {
     width: 45%;
-    padding: 70px 30px 70px 0;
+    padding: 70px 35px 70px 0px;
 }
 
-.down-right{
+.bottom-right {
     position: relative;
-    font-family: "WorkSans-SemiBold";
+    font-family: "WorkSans-Medium";
     color: var(--Bg-green);
 }
 
 
-/* Grid section */
+/* Grid section starts here */
 
 .grid-container {
     display: grid;
     gap: 15px;
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 1fr 1fr;
- 
-    
-
 
 }
 
@@ -186,19 +192,17 @@
 
 }
 
-.grid-card6 {
+.grid-card5 {
     width: 200px;
     grid-area: 2 / 3 / span 2 / span 1;
 }
 
-.grid-card7 {
+.grid-card6 {
     grid-area: 3 / 1 / span 1 / span 1;
 
 }
 
-
-
-.self-serve{
+.self-serve-grid-card{
     width: 250px;
     height: 174px;
     position: absolute;
@@ -208,7 +212,7 @@
     right: 419px;
 }
 
-.custom-data-card{
+.custom-data-grid-card {
     height: 174px;
     width: 193px;
     background: var(--lightest-reen);
@@ -218,7 +222,9 @@
     border-radius: 10px;
 }
 
-.custom-data-card-content{
+.grid-card-content {
     position: absolute;
     bottom: 0;
 }
+/* Grid section Ends here */
+/* Down csection Ends here */
