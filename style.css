@@ -21,7 +21,7 @@
 }
 
 
-/*  Defining variables for color */
+/*  Defining color variables  */
 
 :root {
     --Bg-green: #043F2E;
@@ -66,13 +66,14 @@
 
 .para-text {
     font-family: "WorkSans-Regular";
+    font-size: 1.2rem;
 }
 
 /* Flex class for display flex */
 
 .flex {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 
@@ -121,13 +122,13 @@
 
 #bottom-section {
     background: var(--Green);
-    padding: 60px 0 100px 0;
+    padding: 50px 0 100px 0;
 }
 
 
 .bottom-left {
     width: 45%;
-    padding: 70px 35px 70px 0px;
+    padding: 70px 5px 70px 0px;
 }
 
 .bottom-right {
