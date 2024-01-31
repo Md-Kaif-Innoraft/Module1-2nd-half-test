@@ -1,0 +1,224 @@
+/* Import fonts */
+
+@font-face {
+    font-family: "NoticiaText-Bold";
+    src: url("fonts/NoticiaText-Bold.woff");
+}
+
+@font-face {
+    font-family: "WorkSans-Medium";
+    src: url("fonts/WorkSans-Medium.woff");
+}
+
+@font-face {
+    font-family: "WorkSans-Regular";
+    src: url("fonts/WorkSans-Regular.woff");
+}
+
+@font-face {
+    font-family: "WorkSans-SemiBold";
+    src: url("fonts/WorkSans-SemiBold.woff");
+}
+
+
+/*  Defining variables for color */
+
+:root {
+    --Bg-green: #043F2E;
+    --lightest-reen: #C8F169;
+    --Dark-green: #2A6B2C;
+    --Green: #78C51C;
+    --White: #FFFFFF;
+    --Cream: #EEF2E3;
+}
+
+/*  Reset default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.primary-heading {
+    font-family: "NoticiaText-Bold";
+    font-size: 3rem;
+}
+
+.secondary-heading {
+    font-family: "WorkSans-SemiBold";
+    color: var(--lightest-reen);
+
+}
+
+.para-text {
+    font-family: "WorkSans-Regular";
+}
+
+.flex {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
+
+/*  container for alignment */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* upper section starts here  */
+
+#upper {
+    background-color: var(--Green);
+    padding: 60px 0;
+    color: var(--Cream);
+
+}
+
+
+.card {
+    padding: 70px;
+    background: var(--Dark-green);
+    border-radius: 25px;
+    color: var(--Cream);
+}
+
+
+.upper-left {
+    width: 45%;
+}
+
+
+.primary-btn {
+    padding: 15px 35px;
+    border: 1px solid var(--Cream);
+    border-radius: 10px;
+    font-family: "WorkSans-Regular";
+    background: transparent;
+    color: var(--Cream);
+    margin-top: 40px;
+
+}
+
+.primary-heading {
+    padding: 20px 0;
+}
+
+/* upper section Ends here  */
+
+/* Down container */
+
+#down {
+    background: var(--Green);
+    padding-bottom: 60px;
+}
+
+
+.down-left {
+    width: 45%;
+    padding: 70px 30px 70px 0;
+}
+
+.down-right{
+    position: relative;
+    font-family: "WorkSans-SemiBold";
+    color: var(--Bg-green);
+}
+
+
+/* Grid section */
+
+.grid-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+    
+
+
+}
+
+.grid-card {
+    background: var(--lightest-reen);
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.grid-card-content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+
+}
+
+.grid-card-content p {
+    text-align: center;
+}
+
+.grid-card1 {
+    width: 200px;
+    height: 170px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+.grid-card2 {
+    grid-area: 1 / 2 / span 1 / span 2;
+
+}
+
+.grid-card3 {
+    width: 200px;
+    height: 300px;
+    grid-area: 2 / 1 / span 2 / span 1;
+}
+
+.grid-card4 {
+    width: 250px;
+    height: 350px;
+    grid-area: 1 / 2 / span 2 / span 1;
+
+
+}
+
+.grid-card6 {
+    width: 200px;
+    grid-area: 2 / 3 / span 2 / span 1;
+}
+
+.grid-card7 {
+    grid-area: 3 / 1 / span 1 / span 1;
+
+}
+
+
+
+.self-serve{
+    width: 250px;
+    height: 174px;
+    position: absolute;
+    background: var(--lightest-reen);
+    border-radius: 10px;
+    bottom: 0;
+    right: 419px;
+}
+
+.custom-data-card{
+    height: 174px;
+    width: 193px;
+    background: var(--lightest-reen);
+    position: absolute;
+    bottom: 0;
+    right: 213px;
+    border-radius: 10px;
+}
+
+.custom-data-card-content{
+    position: absolute;
+    bottom: 0;
+}
